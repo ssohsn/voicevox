@@ -211,7 +211,7 @@ const store = new Store<{
         exportLab: { type: "boolean", default: false },
         exportText: { type: "boolean", default: false },
         outputStereo: { type: "boolean", default: false },
-        outputSamplingRate: { type: "number", default: 24000 },
+        outputSamplingRate: { type: "number", default: 44100 },
         audioOutputDevice: { type: "string", default: "default" },
       },
       default: {
@@ -222,7 +222,7 @@ const store = new Store<{
         exportLab: false,
         exportText: false,
         outputStereo: false,
-        outputSamplingRate: 24000,
+        outputSamplingRate: 44100,
         audioOutputDevice: "default",
       },
     },
@@ -685,7 +685,7 @@ ipcMainHandle("SHOW_PROJECT_SAVE_DIALOG", async (_, { title, defaultPath }) => {
   const result = await dialog.showSaveDialog(win, {
     title,
     defaultPath,
-    filters: [{ name: "VOICEVOX Project file", extensions: ["vvproj"] }],
+    filters: [{ name: "LMROID on VOICEVOX", extensions: ["lmproj"] }],
     properties: ["showOverwriteConfirmation"],
   });
   if (result.canceled) {

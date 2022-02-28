@@ -21,7 +21,7 @@
       {{
         (isEdited ? "*" : "") +
         (projectName !== undefined ? projectName + " - " : "") +
-        "VOICEVOX" +
+        "LMROID" +
         (currentVersion ? " - Ver. " + currentVersion : "")
       }}
     </div>

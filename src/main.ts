@@ -32,7 +32,7 @@ createApp(App)
   .use(Quasar, {
     config: {
       brand: {
-        primary: "#a5d4ad",
+        primary: "#ABE1FA",
         secondary: "#212121",
       },
     },

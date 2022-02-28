@@ -126,13 +126,14 @@ export default defineComponent({
         component: UpdateInfo,
       },
       {
-        name: "よくあるご質問",
-        component: QAndA,
-      },
-      {
-        name: "お問い合わせ",
-        component: ContactInfo,
-      },
+      // {
+      //   name: "よくあるご質問",
+      //   component: QAndA,
+      // },
+      // {
+      //   name: "お問い合わせ",
+      //   component: ContactInfo,
+      // },
     ];
 
     const selectedPage = ref(pagedata[0].name);
